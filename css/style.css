@@ -1,101 +1,49 @@
-/*RESET STYLE*/
+pre { font-family: monospace, monospace; }
+code { font-family: monospace, monospace; font-size: 100%; }
 
-html, body, div, span, object, iframe,
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin:0;
-    padding:0;
-    /*border:0;
-    /*outline:0;*/
-    font-size:100%;
-    vertical-align:baseline;
-    /*background:transparent;*/
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+  font-size: 100%;
 }
-
-/*body {
-    line-height:1;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-	display:block;
+body {
+	line-height: 1;
 }
-
-nav ul {
-    list-style:none;
+ol, ul {
+	list-style: none;
 }
-
 blockquote, q {
-    quotes:none;
+	quotes: none;
 }
-
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content:'';
-    content:none;
+	content: '';
+	content: none;
 }
-
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
-
-/* change colours to suit your needs */
-/*ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
-}
-
-/* change colours to suit your needs */
-/*mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
-}
-
-del {
-    text-decoration: line-through;
-}
-
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
-}
-
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-
-/* change border colour to suit your needs */
-/*hr {
-    display:block;
-    height:1px;
-    border:0;
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
-}
-
-input, select {
-    vertical-align:middle;
-}
-
-/*------------------BEGIN MAIN STYLE*/
 
 * {
   text-decoration: none;
@@ -105,6 +53,11 @@ input, select {
 
 html, body {
   height: 100%
+}
+
+html {
+  overflow-y: scroll;
+  font-size: 100%;
 }
 
 #home-index {
@@ -162,9 +115,6 @@ header {
   color: red;
 }
 
-#gallery-main {
-}
-
 .footer {
   position: absolute;
   width: 100%;
@@ -172,6 +122,7 @@ header {
   height: 20px;
   color: #111;
   font-family: 'Syne Mono', monospace;
+  font-size: 0.75rem;
 }
 
 #home-footer, #about-footer {
@@ -182,7 +133,21 @@ header {
   padding: 5px 150px 0px 150px;
 }
 
-
 #dgwt-jg-1 {
   display: inline-block;
+}
+
+@media screen and (max-width: 400px) {
+  #gallery-page {
+    padding: 0;
+  }
+  .footer {
+    font-size: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #gallery-page {
+    padding: 0;
+  }
 }
